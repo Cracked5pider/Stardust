@@ -34,7 +34,7 @@ EXTERN_C FUNC VOID PreMain(
     MmSize = sizeof( PVOID );
 
     //
-    // resolve ntdll!RtlReAllocateHeap and ntdll!NtProtectVirtualMemory for
+    // resolve ntdll!RtlAllocateHeap and ntdll!NtProtectVirtualMemory for
     // updating/patching the Instance in the current memory
     //
     if ( ( Stardust.Modules.Ntdll = LdrModulePeb( H_MODULE_NTDLL ) ) ) {
