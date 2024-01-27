@@ -46,6 +46,6 @@ FUNC VOID Main(
 ```
 
 ## How does it work ?
-I have written a [Blog post]() about how it fully works and the reason behind it.
+I have written a [Blog post](https://5pider.net/blog/2024/01/27/modern-shellcode-implant-design/) about how it fully works and the reason behind it.
 
 ![Stardust messagebox](https://5pider.net/assets/images/MessagePop-4e72bc8a03044463b6afa71d8881646a.png)
