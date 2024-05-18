@@ -19,7 +19,6 @@ CFLAGS  += -s -ffunction-sections -falign-jumps=1 -w
 CFLAGS  += -falign-labels=1 -fPIC -Wl,-Tscripts/Linker.ld
 CFLAGS  += -Wl,-s,--no-seh,--enable-stdcall-fixup
 CFLAGS  += -Iinclude -masm=intel -fpermissive -mrdrnd
-CFLAGS  += -D KAINE_TRANSPORT_HTTP
 
 ##
 ## Stardust source and object files
