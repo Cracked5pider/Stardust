@@ -43,17 +43,6 @@ namespace stardust
             uintptr_t length;
         } base = {};
 
-        struct
-        {
-            uintptr_t handle;
-
-            struct {
-                D_API( MessageBoxA );
-            };
-        } user32 = {
-            RESOLVE_TYPE( MessageBoxA )
-        };
-
         struct {
             uintptr_t handle;
 
