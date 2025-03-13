@@ -57,7 +57,6 @@ auto declfn instance::start(
     DBG_PRINTF( "shellcode @ %p [%d bytes]\n", base.address, base.length );
 
     decltype( MessageBoxA ) * msgbox = RESOLVE_API( reinterpret_cast<uintptr_t>( user32 ), MessageBoxA );
-    decltype( MessageBoxA ) * msgbox = resolve::api<decltype(MessageBoxA)>( reinterpret_cast<uintptr_t>( user32 ), expr::hash_string( "MessageBoxA" ) );
 
     msgbox( nullptr, symbol<const char*>( "Hello world" ), symbol<const char*>( "caption" ), MB_OK );
 }
