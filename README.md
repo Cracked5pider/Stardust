@@ -4,7 +4,7 @@ A modern and easy to use 32/64-bit shellcode template.
 
 - raw strings 
 - C++20 project 
-- uses compile time hashing with fvna1 for both function and module resolving  
+- uses compile time hashing with fnv1a for both function and module resolving  
 
 ### Basic Usage
 
