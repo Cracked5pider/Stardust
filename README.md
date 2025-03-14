@@ -91,7 +91,7 @@ const auto user32 = kernel32.LoadLibraryA( symbol<const char*>( "user32.dll" ) )
 if ( user32 ) {
     DBG_PRINTF( "oh wow look we loaded user32.dll -> %p\n", user32 );
 } else {
-    DBG_PRINTF( "okay something went wrong. failed to load user32 :/\n", user32 );
+    DBG_PRINTF( "okay something went wrong. failed to load user32 :/\n" );
 }
 
 DBG_PRINTF( "running from %ls (Pid: %d)\n",
