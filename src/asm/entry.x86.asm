@@ -23,7 +23,3 @@ GLOBAL _RipStart
         mov eax, [esp]
         sub eax, 0x11
     ret
-
-[SECTION .text$E]
-    SymbolEnd:
-        db 'S', 'T', 'A', 'R', 'D', 'U', 'S', 'T', '-', 'E', 'N', 'D'

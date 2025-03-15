@@ -25,7 +25,3 @@ GLOBAL RipStart
         mov rax, [rsp]
         sub rax, 0x1b
     ret
-
-[SECTION .text$E]
-    SymbolEnd:
-        db 'S', 'T', 'A', 'R', 'D', 'U', 'S', 'T', '-', 'E', 'N', 'D'

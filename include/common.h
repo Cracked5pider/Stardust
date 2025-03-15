@@ -19,7 +19,7 @@ extern "C" auto RipData() -> uintptr_t;
 extern "C" auto RipStart() -> uintptr_t;
 
 #if defined( DEBUG )
-#define DBG_PRINTF( format, ... ) { ntdll.DbgPrint( symbol<PCH>( "[DEBUG::%s::%d] " format ), symbol<PCH>( __FUNCTION__ ), __LINE__, __VA_ARGS__ ); }
+#define DBG_PRINTF( format, ... ) { ntdll.DbgPrint( symbol<PCH>( "[DEBUG::%s::%d] " format ), symbol<PCH>( __FUNCTION__ ), __LINE__, ##__VA_ARGS__ ); }
 #else
 #define DBG_PRINTF( format, ... ) { ; }
 #endif

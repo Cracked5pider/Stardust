@@ -6,6 +6,5 @@ SECTIONS
         *( .text$B );
         *( .rdata* );
         *( .text$C );
-        *( .text$E );
     }
 }

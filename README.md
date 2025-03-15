@@ -103,11 +103,6 @@ DBG_PRINTF( "shellcode @ %p [%d bytes]\n", base.address, base.length );
 
 ### Building 
 
-install python dependencies if not already done:
-```shell
-$ pip install -r requirements.txt
-```
-
 Build in release mode: 
 ```shell
 $ make                                                                                                                                                                                                                                                                                  20:17:26
