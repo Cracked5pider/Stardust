@@ -23,7 +23,7 @@ auto declfn resolve::module(
         }
 
         if ( stardust::hash_string<wchar_t>( Entry->BaseDllName.Buffer ) == library_hash ) {
-            return reinterpret_cast<uintptr_t>( Entry->OriginalBase );
+            return static_cast<uintptr_t>( Entry->OriginalBase );
         }
     } )
 
