@@ -19,11 +19,11 @@ auto declfn resolve::module(
     // iterate over the linked list
     RangeHeadList( NtCurrentPeb()->Ldr->InLoadOrderModuleList, PLDR_DATA_TABLE_ENTRY, {
         if ( !library_hash ) {
-            return reinterpret_cast<uintptr_t>( Entry->OriginalBase );
+            return reinterpret_cast<uintptr_t>( Entry->DllBase );
         }
 
         if ( stardust::hash_string<wchar_t>( Entry->BaseDllName.Buffer ) == library_hash ) {
-            return static_cast<uintptr_t>( Entry->OriginalBase );
+            return reinterpret_cast<uintptr_t>( Entry->DllBase ); 
         }
     } )
 
