@@ -34,7 +34,7 @@ namespace stardust
 {
     template <typename T>
     inline T symbol(T s) {
-        return reinterpret_cast<T>(RipData()) - (reinterpret_cast<uintptr_t>(&RipData) - reinterpret_cast<uintptr_t>(s));
+        return reinterpret_cast<T>(reinterpret_cast<uintptr_t>(RipData()) - (reinterpret_cast<uintptr_t>(&RipData) - reinterpret_cast<uintptr_t>(s)));
     }
 
     class instance {
